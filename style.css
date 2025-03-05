@@ -1,0 +1,292 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px 5%;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #7b61ff;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+  padding: 0 15%;
+}
+
+.main-content {
+  max-width: 50%;
+}
+
+.main-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.main-content h1 span {
+  color: #7b61ff;
+}
+
+.main-content h2 {
+  color: #666;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  max-width: 500px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #7b61ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background: #5a46e3;
+}
+
+.button-outline {
+  border: 2px solid #7b61ff;
+  background: none;
+  color: #7b61ff;
+}
+
+.button-outline:hover {
+  background: #7b61ff;
+  color: white;
+}
+
+.about {
+  text-align: center;
+  padding: 50px;
+  background: #ffffff;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto 15px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.main-image {
+  flex-shrink: 0;
+  margin-left: -50px;
+}
+
+.main-image img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 5px solid #7b61ff;
+  object-fit: cover;
+}
+
+.projects {
+  text-align: center;
+  padding: 50px;
+  background: white;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.project-gallery img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.certificates {
+  text-align: center;
+  padding: 50px;
+  background: #f9f9f9;
+}
+
+.certificates h2 {
+  margin-bottom: 20px;
+}
+
+.certificate-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.certificate-gallery img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.testimonials {
+  padding: 50px;
+  background: white;
+  text-align: center;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.testimonial {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  width: 280px;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #444;
+}
+
+.testimonial h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact {
+  padding: 50px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.contact a {
+  color: #7b61ff;
+  text-decoration: none;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .main {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .main-content {
+    max-width: 100%;
+  }
+
+  .main-image {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .main-image img {
+    width: 300px;
+  }
+
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .certificate-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate-gallery img {
+    width: 80%;
+  }
+
+  .button {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .testimonial-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
